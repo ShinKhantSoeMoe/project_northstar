@@ -13,13 +13,14 @@
   flex-direction: column;
   gap: 1rem;
   transition: all var(--transition);
+  box-shadow: var(--shadow);
 }
 
 .project-card:hover {
-  border-color: var(--accent);
+  border-color: var(--accent-light);
   background: var(--bg-card-hover);
   transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(108, 99, 255, 0.15);
+  box-shadow: 0 8px 30px rgba(14, 165, 233, 0.15);
 }
 
 .project-header {
@@ -42,11 +43,12 @@
   transition: color var(--transition);
 }
 
-.project-links a:hover { color: var(--accent-light); }
+.project-links a:hover { color: var(--accent); }
 
 .project-card h3 {
   font-size: 1.05rem;
   font-weight: 600;
+  color: var(--text);
 }
 
 .project-card p {

@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="hero-content">
         <div className="hero-text">
           <p className="hero-greeting">// Hello, world!</p>
-          <h1 className="hero-name">Your Name</h1>
+          <h1 className="hero-name">Shin Khant Soe Moe</h1>
           <p className="hero-title">
             CS Graduate &amp; <span>Full-Stack Developer</span>
           </p>

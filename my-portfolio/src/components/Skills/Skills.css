@@ -10,12 +10,14 @@
   border-radius: var(--radius);
   padding: 1.5rem;
   transition: all var(--transition);
+  box-shadow: var(--shadow);
 }
 
 .skill-card:hover {
-  border-color: var(--accent);
+  border-color: var(--accent-light);
   background: var(--bg-card-hover);
   transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(14, 165, 233, 0.12);
 }
 
 .skill-card-icon {
