@@ -1,0 +1,12 @@
+footer {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-family: 'Fira Code', monospace;
+  font-size: 0.78rem;
+}
+
+footer span {
+  color: var(--accent);
+}

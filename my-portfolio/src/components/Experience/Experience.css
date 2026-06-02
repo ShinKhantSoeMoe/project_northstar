@@ -1,0 +1,54 @@
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: var(--border);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2.35rem;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg);
+}
+
+.timeline-date {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.78rem;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+}
+
+.timeline-role {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.timeline-company {
+  font-size: 0.9rem;
+  color: var(--accent-light);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-desc {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
