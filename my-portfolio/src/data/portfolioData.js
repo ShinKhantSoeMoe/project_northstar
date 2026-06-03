@@ -39,7 +39,7 @@ export const PROJECTS = [
       "Final year dissertation. Built a cross-device data dashboard in React and D3.js deployed across a large touch display and mobile, supporting a within-subjects HCI study with 11 participants and 4,844 instrumented interaction events.",
     tags: ["React", "D3.js", "HCI", "User Study"],
   
-    repo: "https://github.com/ShinKhantSoeMoe",
+    repo: "https://github.com/ShinKhantSoeMoe/project_pandemic",
   },
   {
     icon: "⚔️",
@@ -65,7 +65,7 @@ export const PROJECTS = [
     description:
       "A multi-user to-do web app built with Python Flask and Supabase, following a three-tier architecture with Row Level Security, GitFlow CI/CD via GitHub Actions, and deployed to Microsoft Azure.",
     tags: ["Python Flask", "Supabase", "Azure", "DevOps"],
-    repo: "https://github.com/ShinKhantSoeMoe",
+    repo: "https://github.com/ShinKhantSoeMoe/project_chalklist",
   },
 ];
 
