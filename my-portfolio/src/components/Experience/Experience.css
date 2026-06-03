@@ -22,7 +22,7 @@
   content: '';
   position: absolute;
   left: -2.35rem;
-  top: 6px;
+  top: 8px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -30,25 +30,67 @@
   border: 2px solid var(--bg);
 }
 
-.timeline-date {
-  font-family: 'Fira Code', monospace;
-  font-size: 0.78rem;
-  color: var(--accent);
-  margin-bottom: 0.3rem;
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+  gap: 1rem;
 }
 
 .timeline-role {
   font-size: 1.05rem;
   font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.2rem;
 }
 
 .timeline-company {
   font-size: 0.9rem;
   color: var(--accent);
-  margin-bottom: 0.5rem;
 }
 
-.timeline-desc {
+.timeline-date {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.78rem;
   color: var(--text-muted);
-  font-size: 0.88rem;
+  white-space: nowrap;
+  padding-top: 0.2rem;
+}
+
+.timeline-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.timeline-bullets li {
+  position: relative;
+  padding-left: 1.25rem;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.timeline-bullets li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.timeline-link {
+  display: inline-block;
+  margin-top: 0.25rem;
+  font-size: 0.82rem;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.timeline-link:hover {
+  color: var(--accent-dark);
 }
