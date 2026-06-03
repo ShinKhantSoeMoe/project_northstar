@@ -2,9 +2,9 @@ import { useState } from 'react';
 import './Contact.css';
 
 const SOCIALS = [
-  { icon: '🐙', label: 'github.com/yourhandle', href: 'https://github.com' },
-  { icon: '💼', label: 'linkedin.com/in/yourhandle', href: 'https://linkedin.com' },
-  { icon: '✉️', label: 'you@email.com', href: 'mailto:you@email.com' },
+  { icon: '🐙', label: 'github.com/ShinKhantSoeMoe', href: 'https://github.com/ShinKhantSoeMoe' },
+  { icon: '💼', label: 'linkedin.com/in/shin-khant-soe-moe-11a1192a3', href: 'https://www.linkedin.com/in/shin-khant-soe-moe-11a1192a3/' },
+  { icon: '✉️', label: 'shinkhantsoemoe05@email.com' },
 ];
 
 export default function Contact() {
@@ -14,22 +14,28 @@ export default function Contact() {
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSent(true);
-    setTimeout(() => setSent(false), 3000);
-    setFormData({ name: '', email: '', message: '' });
+    const res = await fetch('https://formspree.io/f/mzdqbeyv', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(formData),
+    });
+    if (res.ok) {
+      setSent(true);
+      setFormData({ name: '', email: '', message: '' });
+      setTimeout(() => setSent(false), 4000);
+    }
   };
 
   return (
     <section id="contact">
-      <p className="section-label">05 · Contact</p>
       <h2 className="section-title">Get In Touch</h2>
       <div className="contact-wrapper">
         <div className="contact-info">
           <p>
-            I'm actively looking for new opportunities. Whether you have a role,
-            a project, or just want to connect — my inbox is open.
+            I'm currently open to new opportunities and collaborations. 
+            Whether you have a question or just want to say hi, I'll do my best to get back to you!
           </p>
           <div className="social-links">
             {SOCIALS.map((s) => (
