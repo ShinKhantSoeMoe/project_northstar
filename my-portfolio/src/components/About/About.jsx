@@ -8,7 +8,7 @@ export default function About() {
         <div className="about-text">
           <p>
             I'm a <span>Computer Science graduate</span> from Newcastle University, 
-            with a predicted first-class degree and a strong focus on <span>game engineering</span> 
+            with a predicted first-class degree and a strong focus on <span>game engineering </span> 
             and full-stack <span>software development</span>.
             I have hands-on experience building complex game systems, 
             conducting HCI research, and deploying cloud-native applications end-to-end.
