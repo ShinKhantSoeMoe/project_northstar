@@ -5,7 +5,7 @@ const NAV_ITEMS = ['About', 'Skills', 'Projects', 'Experience', 'Contact'];
 export default function Navbar() {
   return (
     <nav>
-      <a href="#hero" className="nav-logo">My Portfolio</a>
+      <a href="#hero" className="nav-logo">Shin Khant's Portfolio</a>
       <ul className="nav-links">
         {NAV_ITEMS.map((item) => (
           <li key={item}>
